@@ -13,6 +13,7 @@ public class AutoMask : MonoBehaviour
     
     void Update()
     {
+        MaskIncrease = GlobalUpgrade.upgradPerSec;
         InternalIncrease = MaskIncrease;
         if (CreatingMask == false)
         {

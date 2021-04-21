@@ -9,5 +9,10 @@ public class PurchaseLog : MonoBehaviour
     public void StartAutoMask()
     {
         AutoMask.SetActive(true);
+        GlobalMasks.MaskCount -= GlobalUpgrade.upgradeValue;
+        GlobalUpgrade.upgradeValue *= 2;
+        GlobalUpgrade.turnOffButton = true;
+        GlobalUpgrade.upgradPerSec += 1;
+        GlobalUpgrade.numberOfUpgrades += 1;
     }
 }

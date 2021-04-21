@@ -7,7 +7,7 @@ public class GlobalMasks : MonoBehaviour
     public static int MaskCount;
     public GameObject MaskDisplay;
     public int InternalMask;
-
+    
     void Update()
     {
         InternalMask = MaskCount;
