@@ -16,6 +16,8 @@ public class GlobalUpgrade : MonoBehaviour
     public GameObject upgradeStats;
     public static int numberOfUpgrades;
     public static int upgradPerSec;
+
+
     
 
     void Update()

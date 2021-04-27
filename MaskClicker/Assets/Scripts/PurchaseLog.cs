@@ -15,4 +15,5 @@ public class PurchaseLog : MonoBehaviour
         GlobalUpgrade.upgradPerSec += 1;
         GlobalUpgrade.numberOfUpgrades += 1;
     }
+
 }

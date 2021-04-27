@@ -20,7 +20,6 @@ public class MainMenuOptions : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
-        Debug.Log("Quit!");
     }
 
     public void Settings()
@@ -32,4 +31,10 @@ public class MainMenuOptions : MonoBehaviour
     {
         SceneManager.LoadScene(0);
     }
+
+    public void PauseMenu()
+    {
+        SceneManager.LoadScene(3);
+    }
+
 }
