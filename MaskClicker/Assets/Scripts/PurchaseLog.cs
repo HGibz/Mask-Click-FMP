@@ -19,10 +19,23 @@ public class PurchaseLog : MonoBehaviour
     {
         AutoMask.SetActive(true);
         GlobalMasks.MaskCount -= FactoryUpgrade.upgradeValue;
-        FactoryUpgrade.upgradeValue *= 1.5f;
+        FactoryUpgrade.upgradeValue *= 2;
         FactoryUpgrade.turnOffButton = true;
         FactoryUpgrade.upgradPerSec += 5;
         FactoryUpgrade.numberOfUpgrades += 1;
     }
+
+
+    public void StartManager()
+    {
+        AutoMask.SetActive(true);
+        GlobalMasks.MaskCount -= ManagerUpgrade.upgradeValue;
+        ManagerUpgrade.upgradeValue *= 2;
+        ManagerUpgrade.turnOffButton = true;
+        ManagerUpgrade.upgradPerSec += 15;
+        ManagerUpgrade.numberOfUpgrades += 1;
+    }
+
+    
 
 }

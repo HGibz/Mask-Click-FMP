@@ -5,8 +5,8 @@ using UnityEngine;
 public class AutoFactory : MonoBehaviour
 {
     public bool CreatingMask = false;
-    public static float MaskIncrease = 5;
-    public float InternalIncrease;
+    public static int MaskIncrease = 5;
+    public int InternalIncrease;
 
 
 

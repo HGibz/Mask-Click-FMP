@@ -9,12 +9,12 @@ public class FactoryUpgrade : MonoBehaviour
     public GameObject fakeText;
     public GameObject realButton;
     public GameObject realText;
-    public float currentMask;
-    public static float upgradeValue = 150;
+    public int currentMask;
+    public static int upgradeValue = 150;
     public static bool turnOffButton = false;
     public GameObject upgradeStats;
-    public static float numberOfUpgrades;
-    public static float upgradPerSec;
+    public static int numberOfUpgrades;
+    public static int upgradPerSec;
 
 
 

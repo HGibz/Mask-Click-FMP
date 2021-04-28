@@ -2,18 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AutoMask : MonoBehaviour
+public class AutoManager : MonoBehaviour
 {
-
     public bool CreatingMask = false;
-    public static int MaskIncrease = 1;
+    public static int MaskIncrease = 15;
     public int InternalIncrease;
-    
 
-    
+
+
     void Update()
     {
-        MaskIncrease = GlobalUpgrade.upgradPerSec;
+        MaskIncrease = ManagerUpgrade.upgradPerSec;
         InternalIncrease = MaskIncrease;
         if (CreatingMask == false)
         {

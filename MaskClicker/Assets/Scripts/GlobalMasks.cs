@@ -4,9 +4,9 @@ using UnityEngine;
 using UnityEngine.UI;
 public class GlobalMasks : MonoBehaviour
 {
-    public static float MaskCount;
+    public static int MaskCount;
     public GameObject MaskDisplay;
-    public float InternalMask;
+    public int InternalMask;
     
     void Update()
     {
