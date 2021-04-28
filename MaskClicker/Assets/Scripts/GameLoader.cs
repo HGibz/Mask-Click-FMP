@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class GameLoader : MonoBehaviour
 {
-    public int savedMasks;
-    public int savedUpgrade;
-    public int savedValue;
+    public float savedMasks;
+    public float savedUpgrade;
+    public float savedValue;
 
     void Start()
     {
         if (MainMenuOptions.isLoading == true)
         {
-            savedMasks = PlayerPrefs.GetInt("SavedMasks");
+            savedMasks = PlayerPrefs.GetFloat("SavedMasks");
             GlobalMasks.MaskCount = savedMasks;
-            savedUpgrade = PlayerPrefs.GetInt("SavedUpgrade");
+            savedUpgrade = PlayerPrefs.GetFloat("SavedUpgrade");
             GlobalUpgrade.upgradPerSec = savedUpgrade;
-            savedValue = PlayerPrefs.GetInt("SavedValue");
+            savedValue = PlayerPrefs.GetFloat("SavedValue");
             SaveGame.saveValue = savedValue;
         }
     }
