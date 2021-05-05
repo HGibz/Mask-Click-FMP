@@ -36,6 +36,25 @@ public class PurchaseLog : MonoBehaviour
         ManagerUpgrade.numberOfUpgrades += 1;
     }
 
-    
+    public void StartWorker()
+    {
+        AutoMask.SetActive(true);
+        GlobalMasks.MaskCount -= WorkerUpgrade.upgradeValue;
+        WorkerUpgrade.upgradeValue *= 2;
+        WorkerUpgrade.turnOffButton = true;
+        WorkerUpgrade.upgradPerSec += 40;
+        WorkerUpgrade.numberOfUpgrades += 1;
+    }
+
+    public void StartMachine()
+    {
+        AutoMask.SetActive(true);
+        GlobalMasks.MaskCount -= MachineUpgrade.upgradeValue;
+        MachineUpgrade.upgradeValue *= 2;
+        MachineUpgrade.turnOffButton = true;
+        MachineUpgrade.upgradPerSec += 100;
+        MachineUpgrade.numberOfUpgrades += 1;
+    }
+
 
 }
